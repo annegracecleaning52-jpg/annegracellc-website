@@ -1,1 +1,22 @@
+import React, { useState } from "react"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { Input } from "@/components/ui/input"; import { Textarea } from "@/components/ui/textarea"; import { CalendarDays, Phone, Mail, Home } from "lucide-react"; import { motion } from "framer-motion";
 
+export default function AnneGraceCleaningWebsite() { const [formData, setFormData] = useState({ name: "", email: "", phone: "", service: "", date: "", time: "", address: "", notes: "", });
+
+const handleChange = (e) => { setFormData({ ...formData, [e.target.name]: e.target.value }); };
+
+const handleSubmit = (e) => { e.preventDefault(); alert("Booking request submitted! We will contact you shortly."); };
+
+return (
+
+{/* Hero Section */}
+<motion.h1 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-4xl md:text-5xl font-bold" > ANNEGRACELLC Cleaning Services </motion.h1>
+Making Your Space Immaculate
+
+We deliver professional, detail-focused cleaning with excellence and integrity. Our team is reliable, thorough, and committed to maintaining a spotless, healthy environment for your home or business. We pride ourselves on consistency, discretion, and exceeding expectations. When you hire us, you're investing in quality, care, and peace of mind.
+
+(786) 587-7636 annegracecleaning52@gmail.com
+  {/* Services Section */}
+  <div className="py-16 px-6 max-w-6xl mx-auto">
+    <h2 className="text-3xl font-semibold text-center mb-10">Our Services</h2>
+    <div className="grid md:grid-cols-4 gap-6">
+      {[
