@@ -16,7 +16,7 @@ export default function AnneGraceCleaningWebsite() {
     time: "",
     address: "",
     notes: "",
-  })
+  });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -37,13 +37,10 @@ export default function AnneGraceCleaningWebsite() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold"
         >
-          ANNEGRACELLC Cleaning Services
+          Anne Grace Cleaning Services
         </motion.h1>
         <p className="mt-4 text-lg">Making Your Space Immaculate</p>
-        <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
-          We deliver professional, detail-focused cleaning with excellence and integrity. Our team is reliable, thorough, and committed to maintaining a spotless, healthy environment for your home or business. We pride ourselves on consistency, discretion, and exceeding expectations. When you hire us, you’re investing in quality, care, and peace of mind.
-        </p>
-        <div className="mt-8 flex justify-center gap-6 text-sm">
+        <div className="mt-6 flex justify-center gap-6 text-sm">
           <span className="flex items-center gap-2"><Phone size={16}/> (786) 587-7636</span>
           <span className="flex items-center gap-2"><Mail size={16}/> annegracecleaning52@gmail.com</span>
         </div>
@@ -101,77 +98,8 @@ export default function AnneGraceCleaningWebsite() {
 
       {/* Footer */}
       <div className="bg-blue-600 text-white text-center py-6 mt-10">
-        <p>© {new Date().getFullYear()} ANNEGRACELLC Cleaning Services. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Anne Grace Cleaning Services. All Rights Reserved.</p>
       </div>
     </div>
   );
 }
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ANNEGRACELLC Cleaning Services</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #f0f6ff; color: #333; }
-    header { background-color: #1e40af; color: white; text-align: center; padding: 60px 20px; }
-    h1 { margin: 0; font-size: 40px; }
-    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-    .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
-    form { display: grid; gap: 15px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    input, select, textarea { padding: 12px; border-radius: 10px; border: 1px solid #ccc; width: 100%; }
-    button { padding: 15px; border: none; border-radius: 10px; background-color: #1e40af; color: white; font-size: 16px; cursor: pointer; }
-    footer { background-color: #1e40af; color: white; text-align: center; padding: 20px; }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>ANNEGRACELLC Cleaning Services</h1>
-  <p>Making Your Space Immaculate</p>
-  <p style="max-width:800px;margin:20px auto;">
-    We deliver professional, detail-focused cleaning with excellence and integrity. Our team is reliable, thorough, and committed to maintaining a spotless, healthy environment for your home or business. We pride ourselves on consistency, discretion, and exceeding expectations. When you hire us, you’re investing in quality, care, and peace of mind.
-  </p>
-  <p>📞 (786) 587-7636 | 📧 annegracecleaning52@gmail.com</p>
-</header>
-
-<section>
-  <h2 style="text-align:center;">Our Services</h2>
-  <div class="services">
-    <div class="card">Residential Cleaning</div>
-    <div class="card">Deep Cleaning</div>
-    <div class="card">Standard Cleaning</div>
-    <div class="card">Move-In / Move-Out Cleaning</div>
-  </div>
-</section>
-
-<section>
-  <h2 style="text-align:center;">Schedule a Cleaning</h2>
-  <form name="booking" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="booking">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <select name="service" required>
-      <option value="">Select Service</option>
-      <option>Residential Cleaning</option>
-      <option>Deep Cleaning</option>
-      <option>Standard Cleaning</option>
-      <option>Move-In / Move-Out Cleaning</option>
-    </select>
-    <input type="date" name="date" required>
-    <input type="time" name="time" required>
-    <input type="text" name="address" placeholder="Service Address" required>
-    <textarea name="notes" placeholder="Additional Notes"></textarea>
-    <button type="submit">Book Now</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2026 ANNEGRACELLC Cleaning Services. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
