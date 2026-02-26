@@ -1,4 +1,10 @@
-
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { CalendarDays, Phone, Mail, Home } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function AnneGraceCleaningWebsite() {
   const [formData, setFormData] = useState({
@@ -31,10 +37,13 @@ export default function AnneGraceCleaningWebsite() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold"
         >
-          Anne Grace Cleaning Services
+          ANNEGRACELLC Cleaning Services
         </motion.h1>
         <p className="mt-4 text-lg">Making Your Space Immaculate</p>
-        <div className="mt-6 flex justify-center gap-6 text-sm">
+        <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+          We deliver professional, detail-focused cleaning with excellence and integrity. Our team is reliable, thorough, and committed to maintaining a spotless, healthy environment for your home or business. We pride ourselves on consistency, discretion, and exceeding expectations. When you hire us, you’re investing in quality, care, and peace of mind.
+        </p>
+        <div className="mt-8 flex justify-center gap-6 text-sm">
           <span className="flex items-center gap-2"><Phone size={16}/> (786) 587-7636</span>
           <span className="flex items-center gap-2"><Mail size={16}/> annegracecleaning52@gmail.com</span>
         </div>
@@ -92,7 +101,7 @@ export default function AnneGraceCleaningWebsite() {
 
       {/* Footer */}
       <div className="bg-blue-600 text-white text-center py-6 mt-10">
-        <p>© {new Date().getFullYear()} Anne Grace Cleaning Services. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} ANNEGRACELLC Cleaning Services. All Rights Reserved.</p>
       </div>
     </div>
   );
